@@ -92,7 +92,7 @@ export default function App() {
           <div className="hero-inner">
             <div>
               <h1 className="title"><span>Tonight,</span><span>pick your</span><span>world.</span></h1>
-              <p className="lede mt-20">Eight films on our screen, four days of showtimes. Choose a poster, pick your seats, and your ticket is ready in under a minute.</p>
+              <p className="">Eight films on our screen, four days of showtimes. Choose a poster, pick your seats, and your ticket is ready in under a minute.</p>
               <div className="cta wrap  ">
                 <a className="btn " href="#now">See what is playing</a>
                 <button className="btn ghost" onClick={surprise}>Surprise me</button>
