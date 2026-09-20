@@ -1,0 +1,52 @@
+export const FILMS = [
+  { id: 'salt', title: 'Salt Meridian', lines: ['SALT', 'MERIDIAN'], fs: 40, genre: 'Sci-Fi', year: 2026, runtime: 138, rating: 'PG-13', score: 8.1,
+    tagline: 'The desert keeps time differently.',
+    synopsis: 'A cartographer crossing a salt flat finds that every marker she plants is already there, weathered by decades she has not lived yet.',
+    director: 'Ines Varga', cast: ['Amara Okafor', 'Leon Duarte', 'Mika Tanaka'], times: ['4:15 PM', '7:00 PM', '9:45 PM'],
+    palette: ['#ff8a3d', '#7a1f5c', '#1b0f3a'], bg: [[0, '#1b0f3a'], [0.55, '#7a1f5c'], [1, '#ff8a3d']], motif: 'dunes' },
+  { id: 'orchard', title: 'The Glass Orchard', lines: ['THE GLASS', 'ORCHARD'], fs: 36, genre: 'Mystery', year: 2025, runtime: 116, rating: 'PG-13', score: 7.6,
+    tagline: 'Something in the trees remembers.',
+    synopsis: 'When a glasshouse orchard blooms out of season, a retired botanist is asked to identify the one tree nobody planted.',
+    director: 'Tomas Reyes', cast: ['Noor Haddad', 'Elias Brandt', 'Wren Kimura'], times: ['3:30 PM', '6:15 PM', '9:00 PM'],
+    palette: ['#8be9c9', '#1f6f78', '#0b2a3a'], bg: [[0, '#0b2a3a'], [1, '#0f4a55']], motif: 'orchard' },
+  { id: 'bus', title: 'Night Bus 9', lines: ['NIGHT', 'BUS 9'], fs: 46, genre: 'Thriller', year: 2026, runtime: 104, rating: 'R', score: 7.4,
+    tagline: 'Route 9 never stops for daylight.',
+    synopsis: 'A night-shift driver realizes the same six passengers board at every stop, and none of them ever get off.',
+    director: 'Dana Whitlock', cast: ['Rafael Costa', 'Jun Park', 'Odette Marsh'], times: ['5:00 PM', '8:00 PM', '10:30 PM'],
+    palette: ['#ffd23f', '#ef476f', '#10162f'], bg: [[0, '#10162f'], [1, '#1c2354']], motif: 'bus' },
+  { id: 'tigers', title: 'Paper Tigers', lines: ['PAPER', 'TIGERS'], fs: 48, genre: 'Animation', year: 2026, runtime: 94, rating: 'PG', score: 8.4,
+    tagline: 'Fold once. Roar twice.',
+    synopsis: "A girl's origami menagerie wakes up the night before her school cuts its art program, and the tigers have a plan.",
+    director: 'Yuki Alvarenga', cast: ['Priya Nair', 'Ben Ostrowski', 'Salma Idris'], times: ['1:00 PM', '3:30 PM', '6:00 PM'],
+    palette: ['#ff6b6b', '#ffe66d', '#4ecdc4'], bg: [[0, '#2aa9a0'], [1, '#1b6f7a']], motif: 'origami' },
+  { id: 'harbor', title: 'Harbor of Small Hours', lines: ['HARBOR OF', 'SMALL HOURS'], fs: 31, genre: 'Romance', year: 2025, runtime: 112, rating: 'PG-13', score: 7.9,
+    tagline: 'Two boats, one tide, no radio.',
+    synopsis: 'Two night fishermen at opposite ends of a harbor start trading messages in lantern light, and neither knows who is on the other end.',
+    director: 'Camille Ferraro', cast: ['Theo Lindgren', 'Aiyana Rojas', 'Ravi Menon'], times: ['4:00 PM', '6:45 PM', '9:30 PM'],
+    palette: ['#f7b2c4', '#5b4b8a', '#1d1b40'], bg: [[0, '#1d1b40'], [0.62, '#5b4b8a'], [1, '#f7b2c4']], motif: 'harbor' },
+  { id: 'ghost', title: 'Velocity Ghost', lines: ['VELOCITY', 'GHOST'], fs: 42, genre: 'Action', year: 2026, runtime: 121, rating: 'PG-13', score: 7.2,
+    tagline: 'Outrun the version of you that is already ahead.',
+    synopsis: 'A getaway driver keeps spotting a car identical to hers, always one lap ahead, about to take the turn she never will.',
+    director: 'Marcus Adeyemi', cast: ['Vera Kolar', 'Diego Salinas', 'Hana Sato'], times: ['4:45 PM', '7:30 PM', '10:15 PM'],
+    palette: ['#3df5ff', '#ff2e88', '#0a0a23'], bg: [[0, '#0a0a23'], [1, '#2a0f45']], motif: 'speed' },
+  { id: 'moth', title: 'Moth Season', lines: ['MOTH', 'SEASON'], fs: 48, genre: 'Horror', year: 2026, runtime: 99, rating: 'R', score: 7.0,
+    tagline: 'They only come when you turn the light on.',
+    synopsis: 'Every autumn, pale moths swarm a small mining town. This year they are not leaving, and they have started copying voices.',
+    director: 'Ilse Novak', cast: ['Cora Whitfield', 'Emeka Obi', 'Lucia Ferreira'], times: ['6:30 PM', '8:45 PM', '11:00 PM'],
+    palette: ['#e6e1b5', '#6b2d5c', '#120a1a'], bg: [[0, '#120a1a'], [1, '#3a1240']], motif: 'moth' },
+  { id: 'echo', title: 'Kilo Echo', lines: ['KILO', 'ECHO'], fs: 52, genre: 'Drama', year: 2025, runtime: 127, rating: 'PG', score: 8.0,
+    tagline: 'Someone is still transmitting.',
+    synopsis: 'A lone operator at a decommissioned radio station picks up a signal from a colleague who died at her post forty years ago.',
+    director: 'Sofia Almeida', cast: ['Henrik Aalto', 'Zainab Yusuf', 'Mateo Ruiz'], times: ['3:00 PM', '5:45 PM', '8:30 PM'],
+    palette: ['#9bd1ff', '#3a5a9b', '#0d1633'], bg: [[0, '#0d1633'], [1, '#1e3a6e']], motif: 'rings' }
+];
+
+export const GENRES = ['All', 'Favorites', ...Array.from(new Set(FILMS.map((f) => f.genre)))];
+
+export const SOON = [
+  { t: 'Lantern Hours', d: 'Opens Oct 2', g: 'Family fantasy', c: ['#ffb347', '#c2185b'], x: '60%', y: '-20%' },
+  { t: 'Static Bloom', d: 'Opens Oct 9', g: 'Science fiction', c: ['#43e97b', '#0f5c6e'], x: '-10%', y: '10%' },
+  { t: 'Ninety Ways Home', d: 'Opens Oct 16', g: 'Comedy', c: ['#f6d365', '#e5533d'], x: '55%', y: '30%' },
+  { t: "The Cartographer's Dog", d: 'Opens Oct 23', g: 'Adventure', c: ['#84fab0', '#5b6cff'], x: '10%', y: '-30%' },
+  { t: 'Midnight Pharmacy', d: 'Opens Oct 30', g: 'Horror comedy', c: ['#a18cd1', '#2b1055'], x: '65%', y: '-10%' }
+];
